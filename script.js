@@ -1,9 +1,9 @@
 /* =========================================================
-   Arham & Shabih — Walima | Interactions
+   Arham & Shabih — Valima | Interactions
    ========================================================= */
 (() => {
   const EVENT = {
-    title: 'Walima Ceremony — Arham Adil Rizvi & Shabih Zehra',
+    title: 'Valima Ceremony — Arham Adil Rizvi & Shabih Zehra',
     location: 'Akacia Banquet, Main Shahrah-e-Faisal, beside Embassy Inn (SMCHS), Karachi',
     // 16 Jan 2027, 12:00 PM Pakistan Time (UTC+5) = 07:00 UTC
     start: new Date('2027-01-16T12:00:00+05:00'),
@@ -152,20 +152,20 @@
   const fmt = d => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
   $('#calBtn').addEventListener('click', () => {
     const ics = [
-      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ArhamShabih//Walima//EN', 'CALSCALE:GREGORIAN',
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ArhamShabih//Valima//EN', 'CALSCALE:GREGORIAN',
       'BEGIN:VEVENT',
-      `UID:walima-arham-shabih-20270116@invite`,
+      `UID:valima-arham-shabih-20270116@invite`,
       `DTSTAMP:${fmt(new Date())}`,
       `DTSTART:${fmt(EVENT.start)}`,
       `DTEND:${fmt(EVENT.end)}`,
       `SUMMARY:${EVENT.title}`,
       `LOCATION:${EVENT.location.replace(/,/g, '\\,')}`,
-      'DESCRIPTION:You are cordially invited to the Walima ceremony of Arham Adil Rizvi & Shabih Zehra.',
-      'BEGIN:VALARM', 'TRIGGER:-P1D', 'ACTION:DISPLAY', 'DESCRIPTION:Walima tomorrow', 'END:VALARM',
+      'DESCRIPTION:You are cordially invited to the Valima ceremony of Arham Adil Rizvi & Shabih Zehra.',
+      'BEGIN:VALARM', 'TRIGGER:-P1D', 'ACTION:DISPLAY', 'DESCRIPTION:Valima tomorrow', 'END:VALARM',
       'END:VEVENT', 'END:VCALENDAR',
     ].join('\r\n');
     const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
-    const a = Object.assign(document.createElement('a'), { href: url, download: 'Walima-Arham-Shabih.ics' });
+    const a = Object.assign(document.createElement('a'), { href: url, download: 'Valima-Arham-Shabih.ics' });
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     toast('Calendar event downloaded');
@@ -174,8 +174,8 @@
   /* ---------- Share ---------- */
   $('#shareBtn').addEventListener('click', async () => {
     const data = {
-      title: 'Walima — Arham & Shabih',
-      text: 'You are invited to the Walima ceremony of Arham Adil Rizvi & Shabih Zehra — Saturday, 16 January 2027, 12 Noon at Akacia Banquet, Karachi.',
+      title: 'Valima — Arham & Shabih',
+      text: 'You are invited to the Valima ceremony of Arham Adil Rizvi & Shabih Zehra — Saturday, 16 January 2027, 12 Noon at Akacia Banquet, Karachi.',
       url: location.href,
     };
     try {
