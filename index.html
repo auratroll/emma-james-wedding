@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arham & Shabih — Walima Ceremony</title>
+  <meta name="description" content="You are invited to the Walima ceremony of Arham Adil Rizvi & Shabih Zehra — Saturday, 16th January 2027 at Akacia Banquet, Karachi." />
+  <meta property="og:title" content="Arham & Shabih — Walima Ceremony" />
+  <meta property="og:description" content="Saturday, 16th January 2027 · 12 Noon · Akacia Banquet, Shahrah-e-Faisal, Karachi" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+  <!-- ============ INTRO / DOORS ============ -->
+  <div id="intro">
+    <div class="door door-left"><div class="door-pattern"></div></div>
+    <div class="door door-right"><div class="door-pattern"></div></div>
+    <div class="intro-content">
+      <div class="intro-ornament"></div>
+      <p class="intro-bismillah" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      <div class="intro-monogram">
+        <span>A</span><em>&amp;</em><span>S</span>
+      </div>
+      <p class="intro-sub">You are cordially invited</p>
+      <button id="openBtn" class="btn-open">
+        <span>Open Invitation</span>
+      </button>
+    </div>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div id="progress"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">A <em>&amp;</em> S</a>
+    <ul>
+      <li><a href="#couple">Couple</a></li>
+      <li><a href="#event">Event</a></li>
+      <li><a href="#countdown">Countdown</a></li>
+      <li><a href="#venue">Venue</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="home" class="hero">
+    <div class="hero-frame">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <div class="hero-inner">
+      <p class="hero-bismillah" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      <div class="divider"><span></span><i>✦</i><span></span></div>
+      <p class="hero-pre">The Walima Ceremony of</p>
+      <h1 class="hero-names">
+        <span class="name split" data-text="Arham">Arham</span>
+        <span class="amp">&amp;</span>
+        <span class="name split" data-text="Shabih">Shabih</span>
+      </h1>
+      <div class="divider"><span></span><i>✦</i><span></span></div>
+      <p class="hero-date">
+        <span>Saturday</span><b>16 · 01 · 2027</b><span>12 Noon</span>
+      </p>
+    </div>
+    <a href="#blessings" class="scroll-hint">
+      <span>Scroll</span><i></i>
+    </a>
+  </header>
+
+  <!-- ============ BLESSINGS ============ -->
+  <section id="blessings" class="section blessings">
+    <div class="container narrow">
+      <p class="arabic reveal" dir="rtl">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّآلِ مُحَمَّدٍ</p>
+      <p class="lead reveal">By the grace of <strong>Prophet Muhammad</strong> <span class="saw">ﷺ</span><br/>and his family, with the blessings of</p>
+      <div class="elders reveal">
+        <p>Mr &amp; Ms SM Wasil Rizvi <span>(late)</span></p>
+        <p>Mubashira Adil Rizvi <span>(late)</span></p>
+      </div>
+      <div class="divider reveal"><span></span><i>✦</i><span></span></div>
+      <p class="lead italic reveal">We would like to invite you to the wedding ceremony of</p>
+    </div>
+  </section>
+
+  <!-- ============ COUPLE ============ -->
+  <section id="couple" class="section couple">
+    <div class="container">
+      <h2 class="section-title reveal"><span>The</span> Couple</h2>
+      <div class="couple-grid">
+        <article class="person-card reveal from-left tilt">
+          <div class="person-initial">A</div>
+          <p class="person-role">The Groom</p>
+          <h3>Arham Adil Rizvi</h3>
+          <div class="mini-line"></div>
+          <p class="person-parents">Son of<br/><strong>Mr &amp; Ms Mehdi Adil Rizvi</strong></p>
+        </article>
+
+        <div class="couple-and reveal zoom">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <span>&amp;</span>
+        </div>
+
+        <article class="person-card reveal from-right tilt">
+          <div class="person-initial">S</div>
+          <p class="person-role">The Bride</p>
+          <h3>Shabih Zehra</h3>
+          <div class="mini-line"></div>
+          <p class="person-parents">Daughter of<br/><strong>Mr &amp; Ms Ali Ahsan</strong></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="section quote-band">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Walima Ceremony ✦ Arham &amp; Shabih ✦ 16 January 2027 ✦ Akacia Banquet ✦ </span>
+        <span>Walima Ceremony ✦ Arham &amp; Shabih ✦ 16 January 2027 ✦ Akacia Banquet ✦ </span>
+      </div>
+    </div>
+    <div class="container narrow">
+      <p class="arabic big reveal" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+      <p class="quote-tr reveal">“And among His signs is that He created for you mates from among yourselves, that you may find tranquillity in them; and He placed between you affection and mercy.”</p>
+      <p class="quote-ref reveal">— Surah Ar-Rum, 30:21</p>
+    </div>
+  </section>
+
+  <!-- ============ EVENT ============ -->
+  <section id="event" class="section event">
+    <div class="container">
+      <h2 class="section-title reveal"><span>The</span> Celebration</h2>
+      <div class="event-card reveal zoom">
+        <div class="event-badge">
+          <span class="badge-script">Walima</span>
+          <span class="badge-sub">Ceremony</span>
+        </div>
+
+        <div class="event-grid">
+          <div class="event-item">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <p class="ei-label">Date</p>
+            <p class="ei-value">Saturday</p>
+            <p class="ei-sub">16<sup>th</sup> January 2027</p>
+          </div>
+          <div class="event-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <p class="ei-label">Time</p>
+            <p class="ei-value">12:00</p>
+            <p class="ei-sub">Noon</p>
+          </div>
+          <div class="event-item">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <p class="ei-label">Venue</p>
+            <p class="ei-value">Akacia Banquet</p>
+            <p class="ei-sub">Main Shahrah-e-Faisal, beside Embassy Inn (SMCHS)</p>
+          </div>
+        </div>
+
+        <div class="event-actions">
+          <button id="calBtn" class="btn">
+            <span>Add to Calendar</span>
+          </button>
+          <a class="btn btn-ghost" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Akacia+Banquet+Shahrah+e+Faisal+SMCHS+Karachi">
+            <span>Get Directions</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" class="section countdown">
+    <div class="container">
+      <h2 class="section-title light reveal"><span>Counting</span> the Days</h2>
+      <div class="timer reveal">
+        <div class="t-box"><span class="t-num" id="d">00</span><span class="t-lbl">Days</span></div>
+        <div class="t-sep">:</div>
+        <div class="t-box"><span class="t-num" id="h">00</span><span class="t-lbl">Hours</span></div>
+        <div class="t-sep">:</div>
+        <div class="t-box"><span class="t-num" id="m">00</span><span class="t-lbl">Minutes</span></div>
+        <div class="t-sep">:</div>
+        <div class="t-box"><span class="t-num" id="s">00</span><span class="t-lbl">Seconds</span></div>
+      </div>
+      <p class="timer-note reveal" id="timerNote">until we celebrate together, In shaa Allah</p>
+    </div>
+  </section>
+
+  <!-- ============ VENUE ============ -->
+  <section id="venue" class="section venue">
+    <div class="container">
+      <h2 class="section-title reveal"><span>The</span> Venue</h2>
+      <div class="venue-wrap">
+        <div class="venue-info reveal from-left">
+          <h3>Akacia Banquet</h3>
+          <p>Main Shahrah-e-Faisal,<br/>beside Embassy Inn,<br/>SMCHS, Karachi</p>
+          <div class="mini-line left"></div>
+          <p class="venue-time">Saturday · 16 January 2027 · 12 Noon</p>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Akacia+Banquet+Shahrah+e+Faisal+SMCHS+Karachi">
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+        <div class="venue-map reveal from-right">
+          <iframe
+            title="Akacia Banquet map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Akacia%20Banquet%20Shahrah%20e%20Faisal%20SMCHS%20Karachi&t=&z=15&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / DUA ============ -->
+  <footer class="footer">
+    <div class="container narrow">
+      <p class="arabic reveal" dir="rtl">بَارَكَ اللّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+      <p class="dua-tr reveal">May Allah bless you both, shower His blessings upon you, and unite you in goodness.</p>
+      <div class="divider reveal"><span></span><i>✦</i><span></span></div>
+      <p class="footer-names reveal">Arham <em>&amp;</em> Shabih</p>
+      <p class="footer-note reveal">Your presence and prayers are our greatest gift.</p>
+      <button id="shareBtn" class="btn btn-ghost light reveal"><span>Share Invitation</span></button>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
